@@ -1,4 +1,4 @@
-import API from "../../utils/API.js";
+import API from "../../Utils/API`";
 import Header from "../Header/Header";
 import EmployeeTable from "../EmployeeTable/EmployeeTable";
 import SearchBar from "../SearchBar/SearchBar";
