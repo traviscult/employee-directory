@@ -54,7 +54,9 @@ class Wrapper extends Component {
     const UserInput = event.target.value;
     const filteredEmployees = employees.filter(
       (employee) =>
-        employee.name.first.toLowerCase().indexOf(UserInput.toLowerCase()) > -1
+        employee.name.first.toLowerCase().indexOf(UserInput.toLowerCase()) >
+          -1 ||
+        employee.name.last.toLowerCase().indexOf(UserInput.toLowerCase()) > -1
     );
     this.setState({
       filteredEmployees,
