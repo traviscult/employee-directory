@@ -1,4 +1,4 @@
-# employee-directory
+# Employee Directory
 
 [![Repo Size](https://img.shields.io/github/repo-size/traviscult/employee-directory?style=plastic)](https://github.com/traviscult/employee-directory)
 [![Main Repo Language](https://img.shields.io/github/languages/top/traviscult/employee-directory?style=plastic)](https://github.com/traviscult/employee-directory)
