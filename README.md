@@ -19,4 +19,4 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 
 ## Deployed Application
 
-[Employee Directory](https://react-employee-directory-randomme.netlify.app/ "Employee Directory")
+[Employee Directory](https://react-employee-directory-app.netlify.app/ "Employee Directory")
