@@ -14,12 +14,12 @@ const EmployeeTable = (props) => {
           <th>DOB</th>
         </tr>
       </thead>
-      <tbody className="">
+      <tbody>
         {props.results.map((result) => (
-          <tr className="table" key={result.login.uuid}>
+          <tr className="table-dark" key={result.login.uuid}>
             <td>
               {" "}
-              <img className="" src={result.picture.medium} alt="" />
+              <img src={result.picture.medium} alt="" />
             </td>
 
             <td>{result.name.first + " " + result.name.last} </td>
