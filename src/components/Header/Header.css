@@ -1,7 +1,15 @@
 .header {
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   background-color: rgb(8, 131, 138);
   color: white;
-  font-size: 30px;
+}
+.title {
+  font-size: 5vw;
+  color: rgb(255, 242, 224);
+  font-weight: 800;
+}
+p {
+  padding-top: 20px;
+  font-size: 1.8vw;
 }
