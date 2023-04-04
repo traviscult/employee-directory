@@ -1,11 +1,11 @@
-// import API from "../../Utils/API";
-// import Header from "../Header/Header";
-// import EmployeeTable from "../EmployeeTable/EmployeeTable";
-// import SearchBar from "../SearchBar/SearchBar";
+import API from "../../utils/API";
+import Header from "../Header/Header";
+import EmployeeTable from "../EmployeeTable/EmployeeTable";
+import SearchBar from "../SearchBar/SearchBar";
 import { Component } from "react";
 
 class Wrapper extends Component {
-  // Setting the components inital state
+  // Setting the component's initial state
   state = {
     search: "",
     employees: [],
@@ -73,6 +73,37 @@ class Wrapper extends Component {
       })
       .catch((err) => console.log(err));
   };
+
+  handleSearch = (event) => {
+    event.preventDefault();
+    if (!this.state.search) {
+      alert("Enter a name");
+    }
+    const { employees, search } = this.state;
+    const filteredEmployees = employees.filter((employee) =>
+      employee.name.first.toLowerCase().includes(search.toLowerCase())
+    );
+    this.setState({
+      filteredEmployees,
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <Header />
+        <SearchBar
+          employee={this.state.employees}
+          handleSearch={this.handleSearch}
+          handleInputChange={this.handleInputChange}
+        />
+        <EmployeeTable
+          results={this.state.filteredEmployees}
+          sortByName={this.sortByName}
+        />
+      </div>
+    );
+  }
 }
 
 export default Wrapper;
