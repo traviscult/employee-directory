@@ -5,7 +5,7 @@ const Header = () => {
     <div className="header">
       <h1 className="title">Employee Directory</h1>
       <p>
-        Click on name filed to filter alphabetically or use the search box to
+        Click on name field to filter alphabetically or use the search box to
         narrow your results.
       </p>
     </div>
